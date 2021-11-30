@@ -1,4 +1,4 @@
-# Long.Analysis-Final
+# Longitudinal Analysis - Final Project
 
 Introduction
 Nepal is one of the least developed and one of the poorest countries on Earth. As an effect of this nearly half of the families in Nepal live in poverty. With poverty comes lack of nutrition. Approximately 40% of Nepal’s population is children under the age of 18. Thus, the health of children is very important to grow and help the country develop, as the outcome of the younger generation is the outcome of the future. Thus, it is of interest to determine variables that may have an effect on the growth of the children in Nepal. Specifically, the maternal factors of a child’s life. For example, the mother’s age at birth or breastfeeding status. In this study, we conduct a longitudinal analysis to characterize the relationship between children’s growth in Nepal and their mother’s characteristics. 
