@@ -55,7 +55,6 @@ run;
 /* -----------------------------------------------*/
 
 proc glm data=nepal plots=residuals;
-class visit (ref="1");
 model weight = visit bf_bin bf_bin*visit age / solution;
 output out=residuals
 r=yresid;
@@ -99,7 +98,7 @@ run;
 /* -----------*/
 
 proc genmod data=nepal plots=all;
-class id visit (ref="1");
+class id;
 model weight = visit bf_bin bf_bin*visit age / dist=normal;
 repeated subject=id / type=ar covb corrw;
 run;
@@ -110,7 +109,7 @@ run;
 /* -----------*/
 
 proc glimmix data=nepal plots=residualpanel METHOD=laplace ;
-class id visit (ref="1");
+class id;
 model weight = visit bf_bin bf_bin*visit age / solution dist=gaussian cl ;
 random int / subject=id type=ar(1);
 run;
